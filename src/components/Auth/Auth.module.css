@@ -1,0 +1,94 @@
+.AuthFull {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AuthBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 45px;
+  width: 75%;
+}
+
+.LeftBlock {
+  width: 70%;
+  width: 460px;
+}
+
+.LeftBlock > form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.LeftBlock > form > input {
+  background: #2d2d2d;
+  border-radius: 6px;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  display: block;
+  margin-bottom: 21px;
+  color: white;
+}
+
+.LeftBlock > form > input[type="submit"] {
+  background: #ff7b31;
+  border-radius: 6px;
+  padding: 8px;
+  border-radius: 6px;
+  color: white;
+  display: block;
+  margin-top: 65px;
+}
+
+.LeftBlock > form > span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.rightBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LeftBlock > form > h1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 18px;
+}
+
+.LeftBlock > form > h1 > span {
+  color: white;
+  font-weight: 300;
+  font-weight: 18px;
+}
+
+.LeftBlock > form > h1 > a {
+  text-decoration: none;
+  color: #ff7b31;
+  font-weight: 300;
+  font-weight: 18px;
+}
+
+.btn {
+  background: #ff7b31;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 500;
+}

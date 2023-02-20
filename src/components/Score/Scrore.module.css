@@ -1,0 +1,362 @@
+.ScoreFull {
+  width: 100%;
+  padding: 8px;
+  background-color: #2d2d2d;
+}
+
+.scoreBlockList {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.checkGraph {
+  width: 100%;
+  height: 360px;
+  background: #1f1f1f;
+  border-radius: 6px;
+  padding: 32px 40px;
+  position: relative;
+}
+
+.checkGraph > h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.checkPlus {
+  position: absolute;
+  left: 40px;
+  bottom: 42px;
+}
+
+.checkPlus > span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #3dd598;
+}
+
+.checkPlus > h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 74px;
+  color: #ffffff;
+}
+
+.checkPlus > h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.leftBlock {
+  width: 48%;
+}
+
+.rightBlock {
+  width: 48%;
+}
+
+.cardsCheckList {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+
+.cardCheck {
+  width: 100%;
+  height: 125px;
+  background: #1f1f1f;
+  border-radius: 6px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 16px;
+}
+
+.cardCheck > img {
+  background: #252525;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.cardCheckInfo {
+  width: 100%;
+}
+
+.cardCheckInfo > span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4c4d53;
+  margin-bottom: 7px;
+  display: block;
+}
+
+.cardCheckInfo > h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  display: flex;
+  gap: 2px;
+  margin-bottom: 8px;
+}
+
+.cardCheckInfo > h2 > span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #84858c;
+}
+
+.cardCheckInfo > h3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #84858c;
+  margin-top: 7px;
+}
+
+.checkStat {
+  width: 100%;
+  background: #1f1f1f;
+  border-radius: 6px;
+  margin-top: 15px;
+  padding: 18px;
+  overflow: hidden;
+}
+
+.checkStat > h1 {
+  width: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tableCheck {
+  padding-right: 18px;
+  width: 100%;
+  margin-top: 20px;
+  max-height: 225px;
+  overflow-y: scroll;
+}
+
+.tableRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.tableRow > div {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.tableRow > div > h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.5884px;
+  line-height: 18px;
+  color: #84858c;
+}
+
+.tableRow > h2 {
+  width: 50%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.5884px;
+  line-height: 18px;
+  color: #84858c;
+}
+
+.graphCapital {
+  background: #1f1f1f;
+  border-radius: 6px;
+  padding: 32px 40px;
+  width: 100%;
+}
+
+.graphCapital > h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.capitalLine {
+  background: #252525;
+  border-radius: 6px;
+  width: 100%;
+  display: flex;
+  margin-top: 15px;
+}
+
+.capitalLine > span {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  padding: 8px 34px;
+}
+
+.capitalLine > span.select {
+  background: #ff7b31;
+  border-radius: 6px;
+}
+
+.capitalStat {
+  margin-top: 15px;
+  display: flex;
+  gap: 35px;
+}
+
+.leftCapital {
+  width: 49%;
+}
+
+.rightCapital {
+  width: 49%;
+}
+
+.graphCapitalLine {
+  margin-top: 15px;
+  background: #1f1f1f;
+  border-radius: 6px;
+  width: 100%;
+  min-height: 360px;
+  padding: 12px 20px;
+}
+
+.graphCapitalLine > h1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.graphCapitalLine > h1 > span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.graphCapitalLine > h1 > h2 {
+  background: #252525;
+  border-radius: 6px;
+  padding: 8px 22px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+@media (max-width: 870px) {
+  .ScoreFull {
+    width: 100%;
+    padding: 8px;
+    background-color: #2d2d2d;
+    overflow-y: scroll;
+  }
+  .scoreBlockList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .leftBlock {
+    width: 100%;
+  }
+  .rightBlock {
+    width: 100%;
+  }
+  .cardsCheckList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+    justify-content: space-between;
+  }
+  .tableRow > h2 {
+    width: 30%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.5884px;
+    line-height: 18px;
+    color: #84858c;
+  }
+  .tableRow > div {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
+  .checkStat > h1 {
+    width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    text-align: center;
+  }
+  .capitalStat {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 !important;
+  }
+  .leftCapital {
+    width: 100%;
+  }
+
+  .rightCapital {
+    width: 100%;
+  }
+  .capitalLine > span {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ffffff;
+    padding: 4px 16px;
+  }
+}

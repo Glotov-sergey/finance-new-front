@@ -1,0 +1,64 @@
+.OperationCard {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #252525;
+  border-radius: 12px;
+  padding: 12px;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.OperationCard:hover {
+  background: #ff7d3166;
+}
+
+.OperationCard:nth-child(even):hover {
+  background: #ff7d3166;
+}
+
+.OperationCard:nth-child(even) {
+  background-color: #1f1f1f;
+}
+
+.OperationCard > h1 {
+  width: 50%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  color: #dfdfdf;
+}
+
+.OperationCardInfo {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.OperationCardInfo > h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  color: #dfdfdf;
+}
+
+.OperationCardInfo > span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3dd598;
+}
+
+@media (max-width: 870px) {
+  .OperationCardInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
