@@ -3,7 +3,7 @@ import { IUser } from "../../types/user";
 
 interface UserState {
   user: IUser;
-  accountNumber: string | null;
+  accountNumber: string;
 }
 
 const initialState: UserState = {
@@ -12,6 +12,7 @@ const initialState: UserState = {
     balance: 0,
     pl: 0,
     withdrawal: 0,
+    detailed_trades: [],
   },
   accountNumber: "",
 };

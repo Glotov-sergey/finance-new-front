@@ -1,0 +1,128 @@
+.create {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.create h1 {
+  font-size: 42px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.create a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.create form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 20px;
+}
+
+.create form button {
+  outline: none;
+  background: #ff7b31;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.create form button:hover {
+  opacity: 0.5;
+}
+
+.inputBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.inputBlock label {
+  color: white;
+  font-weight: 500;
+  font-size: 19px;
+}
+
+.inputBlock label span {
+  color: gray;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.inputBlock input {
+  width: 100%;
+  background: #202020;
+  border: 1px solid #4b4b4b;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  outline: none;
+  color: white;
+}
+
+.success {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.success a {
+  color: white;
+}
+
+.success h1 {
+  font-size: 42px;
+  text-align: center;
+}
+
+.email {
+  color: #ff7b31;
+  font-size: 32px;
+  text-align: center;
+}
+
+.email span {
+  color: white;
+}
+
+.access {
+  color: #ff7b31;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.access span {
+  color: white;
+}
+
+.success button {
+  background: #ff7b31;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}

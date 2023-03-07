@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.consultant h1 {
+  color: white;
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+.consultant form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.inputBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.inputBlock label {
+  color: white;
+}
+
+.inputBlock input {
+  width: 100%;
+  background: #202020;
+  border: 1px solid #4b4b4b;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  outline: none;
+  color: white;
+}
+
+.consultant form button {
+  background: #ff7b31;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

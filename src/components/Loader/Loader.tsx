@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import styles from "./Loader.module.css";
 
-const Lodaer: FC = () => {
+const Loader: FC = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.ldsdualring}></div>
@@ -9,4 +9,4 @@ const Lodaer: FC = () => {
   );
 };
 
-export default Lodaer;
+export default Loader;

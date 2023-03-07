@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.chooseAuth img {
+  margin-bottom: 20px;
+}
+
+.chooseAuth h1 {
+  color: white;
+  margin-top: 20px;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.chooseAuth a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  background: #ff7b31;
+  width: 300px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 10px 0px;
+  transition: opacity 0.2s ease;
+  font-weight: 500;
+}
+
+.chooseAuth a:hover {
+  opacity: 0.5;
+}

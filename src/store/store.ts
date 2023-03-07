@@ -1,8 +1,14 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import userReducer from "./slices/userSlice";
+import adminReducer from "./slices/adminSlice";
+import consultantReducer from "./slices/consultantSlice";
+import sidebarReducer from "./slices/sidebar";
 
 const rootReducer = combineReducers({
   userReducer,
+  adminReducer,
+  consultantReducer,
+  sidebarReducer,
 });
 
 export const store = configureStore({

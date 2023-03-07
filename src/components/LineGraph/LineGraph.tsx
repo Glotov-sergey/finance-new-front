@@ -1,59 +1,56 @@
 import React, { FC } from "react";
-import ReactApexChart from "react-apexcharts";
-import { ApexOptions } from "apexcharts";
-interface IGraph {
-  data: number[];
+import {
+  Area,
+  Tooltip,
+  CartesianGrid,
+  XAxis,
+  YAxis,
+  AreaChart,
+} from "recharts";
+
+interface ILineData {
+  graphData: any[];
 }
 
-const LineGraph: FC<IGraph> = ({ data }) => {
-  const series = [
-    {
-      name: "trades",
-      data: data,
-    },
-  ];
-
-  const options: ApexOptions = {
-    colors: ["#FF7B31"],
-    chart: {
-      height: 350,
-      type: "area",
-    },
-    dataLabels: {
-      enabled: false,
-    },
-    stroke: {
-      curve: "smooth",
-    },
-    xaxis: {
-      type: "datetime",
-      categories: [
-        "2018-09-19T00:00:00.000Z",
-        "2018-09-19T01:30:00.000Z",
-        "2018-09-19T02:30:00.000Z",
-        "2018-09-19T03:30:00.000Z",
-        "2018-09-19T04:30:00.000Z",
-        "2018-09-19T05:30:00.000Z",
-        "2018-09-19T06:30:00.000Z",
-      ],
-    },
-    // tooltip: {
-    //   x: {
-    //     format: "dd/MM/yy HH:mm",
-    //   },
-    // },
-    legend: {
-      show: false,
-    },
-  };
-
+const LineGraph: FC<ILineData> = ({ graphData }) => {
   return (
-    <ReactApexChart
-      options={options}
-      series={series}
-      type="area"
-      height="100%"
-    />
+    <>
+      <AreaChart
+        width={700}
+        height={500}
+        data={graphData}
+        margin={{ top: 140, right: 30, left: 0, bottom: 0 }}
+      >
+        <defs>
+          <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="5%" stopColor="#ff7b31" stopOpacity={0.8} />
+            <stop offset="95%" stopColor="#ff7b31" stopOpacity={0} />
+          </linearGradient>
+          <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="5%" stopColor="#ffffff" stopOpacity={0.8} />
+            <stop offset="95%" stopColor="#ffffff" stopOpacity={0} />
+          </linearGradient>
+        </defs>
+        <XAxis dataKey="type" />
+        <YAxis />
+        <CartesianGrid strokeDasharray="1 1" />
+        <Tooltip />
+        <Area
+          type="monotone"
+          dataKey="profit"
+          stroke="#ff7b31"
+          fillOpacity={1}
+          fill="url(#colorUv)"
+        />
+        <Area
+          type="monotone"
+          dataKey="commision"
+          stroke="#000"
+          fillOpacity={1}
+          fill="url(#colorPv)"
+        />
+      </AreaChart>
+    </>
   );
 };
 

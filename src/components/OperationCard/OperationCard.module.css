@@ -62,3 +62,7 @@
     justify-content: space-between;
   }
 }
+
+.red {
+  color: red !important;
+}

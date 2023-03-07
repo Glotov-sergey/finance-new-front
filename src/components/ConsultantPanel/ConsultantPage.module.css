@@ -1,0 +1,9 @@
+.consultantPanel {
+  color: white;
+  display: flex;
+}
+
+.content {
+  padding-left: 30px;
+  padding-top: 20px;
+}
