@@ -9,6 +9,12 @@ import upArrowSvg from "./up-arrow.svg";
 import notificationSvg from "./notifications.svg";
 import avatarImage from "./avatar.png";
 import selectImage from "./select-image.svg";
+import account from './account.svg';
+import history from './history.svg'
+import chat from './chat.svg';
+import download from './download.svg';
+import notifications from './notifications.svg';
+import settings from './settings.svg';
 
 export {
   Savings,
@@ -22,4 +28,10 @@ export {
   notificationSvg,
   avatarImage,
   selectImage,
+  account,
+  history,
+  chat,
+  download,
+  notifications,
+  settings,
 };
