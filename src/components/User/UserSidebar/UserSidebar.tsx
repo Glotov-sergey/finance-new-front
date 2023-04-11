@@ -1,6 +1,6 @@
 import React from "react";
-import { logoSm, account, history, chat, settings, download } from "../../../assets/index";
-import s from "./Sidebar.module.css";
+import { logoSm, account, history, chat} from "../../../assets/index";
+import s from "./UserSidebar.module.css";
 
 interface Item {
   title: string;
@@ -9,7 +9,7 @@ interface Item {
 
 //TODO: поменять цвет иконок меню при наведении
 
-const Sidebar = () => {
+const UserSidebar = () => {
   const data: Item[] = [
     {
       title: "Счета",
@@ -46,4 +46,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default UserSidebar;

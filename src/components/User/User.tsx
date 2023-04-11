@@ -1,15 +1,15 @@
 import React from 'react'
 import s from './User.module.css'
-import Sidebar from './Sidebar/Sidebar'
-import Navbar from '../ConsultantPanel/Navbar/Navbar'
+import UserSidebar from './UserSidebar/UserSidebar'
+import UserNavbar from './UserNavbar/UserNavbar'
 import Score from '../Score/Score'
 
 const User = () => {
   return (
     <section className={s.wrapper}>
-      <Sidebar/>
-      <div>
-        <Navbar/>
+      <UserSidebar/>
+      <div className={s.content}>
+        <UserNavbar/>
         <Score/>
       </div>
     </section>

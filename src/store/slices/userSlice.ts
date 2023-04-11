@@ -8,6 +8,7 @@ interface UserState {
 
 const initialState: UserState = {
   user: {
+    name: 'Ivan',
     all_trades: [],
     balance: 0,
     pl: 0,

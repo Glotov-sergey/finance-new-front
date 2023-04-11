@@ -3,6 +3,7 @@ import { nonSaving, Savings } from "../../assets";
 import { useAppDispatch, useAppSelector } from "../../hooks/redux";
 import CapitalCard from "../CapitalCard/CapitalCard";
 import { OperationCard } from "../OperationCard/OperationCard";
+import {Line as TestLine} from 'react-chartjs-2';
 
 import styles from "./Scrore.module.css";
 import LineGraph from "../LineGraph/LineGraph";
@@ -20,15 +21,15 @@ const Score = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isVisibleItems, setIsVisibleItems] = useState(false);
 
-  useEffect(() => {
-    setIsLoading(true);
-    getAllUser(accountNumber).then((res) => {
-      console.log(res.data);
-      dispatch(setUser(res.data.info));
-      setIsLoading(false);
-      setIsVisibleItems(true);
-    });
-  }, []);
+  // useEffect(() => {
+  //   setIsLoading(true);
+  //   getAllUser(accountNumber).then((res) => {
+  //     console.log(res.data);
+  //     dispatch(setUser(res.data.info));
+  //     setIsLoading(false);
+  //     setIsVisibleItems(true);
+  //   });
+  // }, []);
 
   const graphData = isVisibleItems ? user.detailed_trades.slice(0, 5) : [];
 
@@ -39,6 +40,7 @@ const Score = () => {
         {/* <UpBar /> */}
         <div className={styles.scoreBlockList}>
           <div className={styles.leftBlock}>
+            {/* first block */}
             <div className={styles.checkGraph}>
               <h2>Счёт #{accountNumber}</h2>
               <div className={styles.checkPlus}>
@@ -47,6 +49,7 @@ const Score = () => {
                 <h4>Общая сумма счета</h4>
               </div>
             </div>
+            {/* second block */}
             <div className={styles.cardsCheckList}>
               <div className={styles.cardCheck}>
                 <img src={Savings} alt="saving" />
@@ -74,12 +77,20 @@ const Score = () => {
                   <h2>
                     $150<span>/$1000</span>
                   </h2>
+                  <Line
+                    percent={10}
+                    strokeWidth={3}
+                    trailWidth={3}
+                    trailColor="#DDE0F1"
+                    strokeColor="#FF7B31"
+                  />
                   <h3>
                     3% от общей суммы <span>+3%</span>
                   </h3>
                 </div>
               </div>
             </div>
+            {/* third block */}
             <div className={styles.checkStat}>
               <h1>
                 <span>Транзакции</span>
@@ -136,7 +147,7 @@ const Score = () => {
                 <span>График капитализации</span>
                 <h2>За год 2022</h2>
               </h1>
-              <LineGraph graphData={graphData} />
+              {/* <LineGraph graphData={graphData} /> */}
             </div>
           </div>
         </div>

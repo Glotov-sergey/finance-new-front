@@ -15,6 +15,7 @@ import chat from './chat.svg';
 import download from './download.svg';
 import notifications from './notifications.svg';
 import settings from './settings.svg';
+import userMainBg from './userMainBg.png'
 
 export {
   Savings,
@@ -34,4 +35,5 @@ export {
   download,
   notifications,
   settings,
+  userMainBg,
 };

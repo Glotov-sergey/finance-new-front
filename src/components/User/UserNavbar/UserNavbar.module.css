@@ -1,0 +1,96 @@
+.navbar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: calc(100vw - (280px + 50px));
+    gap: 20px;
+  }
+  
+  .search {
+    position: relative;
+    flex: 1;
+  }
+  
+  .search img {
+    position: absolute;
+    left: 20px;
+    top: 24px;
+  }
+  
+  .search input {
+    background: #1f1f1f;
+    border: none;
+    outline: none;
+    padding-left: 50px;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  
+  .search input::placeholder {
+    color: white;
+  }
+  
+  .info {
+    display: flex;
+    background: #1f1f1f;
+    padding: 23px 24px;
+    border-radius: 6px;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  .info p {
+    color: #84858c;
+  }
+  
+  .info p span {
+    color: white;
+  }
+  
+  .broker {
+    color: white;
+  }
+
+  .infoImage {
+    transform: rotate(180deg);
+  }
+  
+  .notifications {
+    border-radius: 6px;
+    background: #1f1f1f;
+    padding: 20px;
+  }
+  
+  .notificationsDot {
+    position: relative;
+  }
+  
+  .notificationsDot::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: #ff3737;
+    width: 11px;
+    height: 11px;
+  }
+  
+  .user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 42px;
+    background: #1f1f1f;
+    border-radius: 6px;
+  }
+  
+  .userInfo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }

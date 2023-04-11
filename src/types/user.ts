@@ -8,6 +8,7 @@ export interface IDetailedTrade {
 }
 
 export interface IUser {
+  name: string;
   all_trades: number[];
   balance: number;
   pl: number;
