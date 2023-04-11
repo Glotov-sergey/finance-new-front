@@ -1,3 +1,11 @@
+:root {
+  --black: #1f1f1f;
+  --grey: #84858C;
+  --darkgrey: #4C4D53;
+  --orange: #FF7B31;
+  --white: #FFFFFF;
+}
+
 .App {
   text-align: center;
 }

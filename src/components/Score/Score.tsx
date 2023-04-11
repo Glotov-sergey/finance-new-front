@@ -34,7 +34,7 @@ const Score = () => {
 
   return (
     <>
-      {isLoading ? <Loader /> : null}
+      {/* {isLoading ? <Loader /> : null} */}
       <div className={styles.ScoreFull}>
         {/* <UpBar /> */}
         <div className={styles.scoreBlockList}>

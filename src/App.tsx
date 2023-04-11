@@ -9,6 +9,7 @@ import CreateConsultant from "./components/CreateConsultant/CreateConsultant";
 import ChooseAuth from "./components/ChooseAuth/ChooseAuth";
 import ConsultantAuth from "./components/ConsultantAuth/ConsultantAuth";
 import ConsultantPanel from "./components/ConsultantPanel/ConsultantPanel";
+import User from "./components/User/User";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/consultant-auth" element={<ConsultantAuth />} />
         <Route path="/create-consultant" element={<CreateConsultant />} />
         <Route path="/consultant/:id" element={<ConsultantPanel />} />
+        <Route path="/user" element={<User/>} />
       </Routes>
     </>
   );
