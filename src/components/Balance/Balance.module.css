@@ -1,0 +1,128 @@
+.bl__wrapper {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 115%;
+    color: #FFFFFF;
+    padding-top: 23px;
+    display: grid;
+    grid-template-areas: 
+    "A B C C"
+    "D D D E"
+    ;
+    gap: 20px;
+}
+
+.bl__total {
+    position: relative;
+    grid-area: A;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    background-color: #1F1F1F;
+    border-radius: 6px;
+    /* width: 353px; */
+    height: 383px;
+}
+
+.bl__total_month {
+    position: relative;
+    grid-area: B;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    background-color: #1F1F1F;
+    border-radius: 6px;
+    /* width: 353px; */
+    height: 383px;
+}
+
+.bl__title {
+    margin-bottom: 15px;
+}
+
+.bl__price {
+    font-size: 40px;  
+}
+
+.bl__price span {
+    color: #3DD598;
+    font-size: 16px;
+}
+
+.bl__month {
+    font-size: 40px;  
+}
+
+.bl__month span {
+    color: #D53D3D;
+    font-size: 16px;
+}
+
+.bl__graph {
+    padding: 30px;
+    grid-area: C;
+    background-color: #1F1F1F;
+    border-radius: 6px;
+    /* width: 811px; */
+    height: 383px;
+}
+
+.bl__history {
+    padding: 30px;
+    grid-area: D;
+    background-color: #1F1F1F;
+    border-radius: 6px;
+    /* width: 1083px; */
+    height: 533px;
+    overflow: hidden;
+}
+
+.line {
+    position: absolute;
+    bottom: 12%;
+    right: 0;
+}
+
+.line2 {
+    position: absolute;
+    top: 13%;
+    right: 0;
+}
+
+.historyTitle {
+    margin-bottom: 36px;
+}
+
+.historyMenu {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+}
+
+.historyMenu:nth-child(even) {
+    background-color: #252525;
+}
+
+.historyMenu:nth-child(odd) {
+    background-color: #323232;
+}
+
+.historyMenu p {
+    padding: 12px 0;
+    font-size: 14px;
+    color: #84858C;
+}
+
+.input {
+    position: relative;
+}
+
+.input::before {
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.5' cy='7.5' r='6.5' stroke='white' stroke-width='2'/%3E%3Cpath d='M12.5 12.5L15 15' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+    position: absolute;
+    top: 0;
+    left: 0;
+}

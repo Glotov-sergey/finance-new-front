@@ -3,6 +3,7 @@ import s from './User.module.css'
 import UserSidebar from './UserSidebar/UserSidebar'
 import UserNavbar from './UserNavbar/UserNavbar'
 import Score from '../Score/Score'
+import Balance from '../Balance/Balance'
 
 const User = () => {
   return (
@@ -10,7 +11,8 @@ const User = () => {
       <UserSidebar/>
       <div className={s.content}>
         <UserNavbar/>
-        <Score/>
+        <Balance/>
+        {/* <Score/> */}
       </div>
     </section>
   )
