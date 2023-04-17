@@ -4,6 +4,7 @@ import UserSidebar from './UserSidebar/UserSidebar'
 import UserNavbar from './UserNavbar/UserNavbar'
 import Score from '../Score/Score'
 import Balance from '../Balance/Balance'
+import Chat from '../Chat/Chat'
 
 const User = () => {
   return (
@@ -11,7 +12,8 @@ const User = () => {
       <UserSidebar/>
       <div className={s.content}>
         <UserNavbar/>
-        <Balance/>
+        <Chat/>
+        {/* <Balance/> */}
         {/* <Score/> */}
       </div>
     </section>

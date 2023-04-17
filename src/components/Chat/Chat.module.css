@@ -1,0 +1,93 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.menu {
+    padding: 20px;
+    height: 941px;
+    background-color: #1F1F1F;
+    border-radius: 6px;
+}
+
+.menu__info {
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    margin-bottom: 24px;
+}
+
+.menu__btn {
+    background-color:#FF7B31;
+    width: 100%;
+    padding: 13px;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 114%;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.menu__appeal {
+    padding: 20px;
+    background-color: #2D2D2D;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__appealTitle {
+    color: #FFF;
+    margin-bottom: 3px;
+}
+
+.menu__appealDate {
+    color: #929AA4;
+
+}
+
+.menu__appealStatus {
+    padding: 6px 17px;
+    align-self: flex-start;
+    background-color: #1F1F1F;
+    color: #FFF;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.chat {
+    display: grid;
+    place-items: center;
+    height: 941px;
+    background-color: #1F1F1F;
+    border-radius: 6px;
+}
+
+.chat__wrapper {
+    display: grid;
+    place-items: center;
+}
+
+.chat__img {
+    margin-bottom: 28px;
+}
+
+.chat__title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFF;
+    margin-bottom: 9px;
+}
+
+.chat__desc {
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFF;
+}

@@ -2,6 +2,7 @@ import React, { MouseEventHandler } from "react";
 import s from "./Balance.module.css";
 import line from "../../assets/line.png";
 import line2 from "../../assets/line-2.png";
+import search from '../../assets/search.svg';
 
 const Balance = () => {
 
@@ -128,7 +129,10 @@ const Balance = () => {
         ))}
       </div>
       <div>
+        <label className={s.label}>
         <input className={s.input} type="text" placeholder="Поиск" onClick={handleClick}/>
+        <img className={s.input__image} src={search} alt="search" />
+        </label>
       </div>
     </div>
   );
