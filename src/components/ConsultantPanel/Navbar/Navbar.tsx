@@ -36,7 +36,7 @@ const Navbar = () => {
       </div>
       <div className={styles.user}>
         <div className={styles.userInfo}>
-          <img src={avatarImage} alt="аватар" />
+          <img src={avatarImage} alt="аватар" width={32} height={32}/>
           <h4>{consultant.name}</h4>
         </div>
         <img src={upArrowSvg} alt="стрелка" />

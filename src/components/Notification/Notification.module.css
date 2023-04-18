@@ -1,0 +1,45 @@
+.notification {
+    margin-top: 20px;
+    background-color: #1F1F1F;
+    border-radius: 6px;
+    padding: 30px 40px;
+}
+
+.notification__title {
+    color: #FFF;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.note {
+    position: relative;
+    padding: 30px 40px;
+    background-color: #2D2D2D;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.note h4 {
+    color: #FFF;
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.note__text {
+    color: #84858C;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.note__date {
+    color: #FFF;
+    font-size: 16px;
+}
+
+.note__btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

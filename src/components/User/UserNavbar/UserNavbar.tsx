@@ -60,7 +60,7 @@ const UserNavbar = () => {
       <div onClick={() => setUserIsOpen((p) => !p)}>
         <div className={s.user}>
           <div className={s.userInfo}>
-            <img src={avatarImage} alt="аватар" />
+            <img src={avatarImage} alt="аватар" width={32} height={32}/>
             <h4>{user.name}</h4>
           </div>
           <img

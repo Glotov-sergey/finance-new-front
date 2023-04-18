@@ -1,0 +1,110 @@
+.settings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.profile {
+  background-color: #1f1f1f;
+  border-radius: 6px;
+  padding: 35px 75px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.lastName {
+  font-weight: 500;
+    color: #FFF;
+    font-size: 48px;
+}
+
+.name {
+  color: #84858C;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.form {
+  height: 770px;
+  padding: 30px 70px;
+  background-color: #1F1F1F;
+  border-radius: 6px;
+}
+
+.form__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin-bottom: 30px;
+}
+
+.form__label {
+  color: #84858C;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.form__input {
+  font-weight: 400;
+  padding: 10px 15px;
+  display: block;
+  background-color: #2D2D2D;
+  color: #FFF;
+  margin-top: 8px;
+  border-radius: 6px;
+  width: 320px;
+}
+
+.form__btn {
+  width: 320px;
+  background-color: #FF7B31;
+  padding: 10px;
+  border-radius: 6px;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.count {
+  padding: 30px 45px;
+  background-color: #1F1F1F;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.count__topRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+
+.count__text {
+  display: inline-block;
+  color: #84858C;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.count__text span {
+  margin-left: 20px;
+  color: #FFFFFF;
+}
+
+.count__balance {
+  font-weight: 700;
+  font-size: 64px;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+
+.count__btn {
+  font-weight: 500;
+  font-size: 16px;
+  padding: 11px 24px;
+  color: #FFF;
+  background-color: #FF7B31;
+  border-radius: 6px;
+}
